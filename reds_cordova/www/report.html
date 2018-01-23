@@ -1,0 +1,110 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="pages">
+    <div data-page="report" class="page">
+        <div class="page-content" style="padding-top: 0px;">
+        	<!-- Block Title -->
+			<div class="block-title" style="margin-top: 10px;">Report Incident</div>
+			<div class="block" style="margin-bottom: 10px;">
+				<p>Report any abnormal incidents such as a high number of patients with fever e.g.</p>
+			</div>
+            <div class="content-block" style="margin-top: 10px;">
+                <form class="list" id="my-form" style="margin-top: 0px;">
+	                <ul>
+						<li>
+							<div class="item-content item-input">
+								<div class="item-inner">
+									<div class="item-title item-label">
+										Describe Incident
+									</div>
+									<div class="item-input-wrap">
+										<input name="name" placeholder="Incident Name" type="text">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content item-input">
+								<div class="item-inner">
+									<div class="item-title item-label">Severity</div>
+									<div class="item-input-wrap">
+										<div class="range-slider range-slider-init" data-label="true">
+											<input type="range" value="5" min="0" max="10" step="1">
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content item-input">
+								<div class="item-inner">
+									<div class="item-title item-label">
+										Priority
+									</div>
+									<div class="item-input-wrap">
+										<select name="gender">
+											<option selected value="mi">
+												Not Even worth mentioning
+											</option>
+											<option value="mi">
+												Minor
+											</option>
+											<option value="m">
+												Medium
+											</option>
+											<option value="u">
+												Urgent
+											</option>
+											<option value="we">
+												World Ending
+											</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content item-input">
+								<div class="item-inner">
+						        	<div class="item-title item-label">Date</div>
+							        <div class="item-input-wrap">
+							          <input type="date" value="2014-04-30" placeholder="Please choose...">
+							        </div>
+						      	</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content item-input">
+								<div class="item-inner">
+						        	<div class="item-title item-label">Time</div>
+							        <div class="item-input-wrap">
+							          <input type="datetime-local" placeholder="Please choose...">
+							        </div>
+						      	</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content item-input">
+								<div class="item-inner">
+									<div class="item-title item-label">Describe Incident</div>
+									<div class="item-input-wrap">
+										<textarea class="resizable" placeholder="Describe Incident"></textarea>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="block block-strong row">
+						<div class="col">
+							<a class="button convert-form-to-data" href="#">Save Draft</a>
+						</div>
+						<div class="col">
+							<a class="button fill-form-from-data" href="#">Send Report</a>
+						</div>
+					</div>
+				</form>
+            </div>
+        </div>
+    </div>
+</div>
