@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Required meta tags-->
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable"><!-- Color theme for statusbar -->
+		<meta content="#2196f3" name="theme-color"><!-- Your app title -->
+		<title>
+			REDS App By RACACBT
+		</title><!-- Path to Framework7 Library CSS, Material Theme -->
+		<link href="dist/css/framework7.min.css" rel="stylesheet"><!-- Path to Framework7 Library CSS, Material Theme -->
+		<link href="dist/css/framework7.ios.min.css" rel="stylesheet"><!-- Path to your custom app styles-->
+		<link href="dist/css/framework7-icons.css" rel="stylesheet">
+		<link href="dist/css/my-app.css" rel="stylesheet">
+	</head>
+	<body><!-- App root element -->
+	    <div id="app">
+			<!-- Statusbar overlay -->
+			<div class="statusbar"></div>
+			<div class="panel panel-left panel-reveal">
+				<div class="list simple-list  no-hairlines-between no-harilines" style="border: none;">
+					<ul>
+						<li class="button" style="border: none;"><a class="panel-close" href="/">Home</a></li>
+						<li class="button" style="border: none;"><a class="panel-close" href="/report/">Report Incident</a></li>
+						<li class="button" style="border: none;"><a class="panel-close" href="#">Provincial Alerts</a></li>
+						<li class="button" style="border: none;"><a class="panel-close" href="#">National Alerts</a></li>
+						<li class="item-divider">Settings</li>
+						<li class="button" style="border: none;"><a class="panel-close" href="#">Settings</a></li>
+						<li class="button" style="border: none;"><a class="panel-close" href="/about/">About REDS</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="navbar">
+				<div class="navbar-inner sliding">
+					<div class="left">
+						<a class="panel-open link" href="#">
+							<i class="icon f7-icons">bars</i>
+						</a>
+					</div>
+					<div class="right">
+						<a href="/" class="link">
+							<i class="icon f7-icons icon-home">home</i>
+						</a>
+						<a href="/report/" class="link">
+							<i class="icon f7-icons">document_text_fill</i>
+						</a>
+						<a class="link icon-only searchbar-enable" data-searchbar=".searchbar">
+							<i class="icon f7-icons ios-only">search_strong</i>
+							<i class="icon f7-icons material-icons md-only">search</i>
+						</a>
+					</div>
+					<!-- Searchbar is a direct child of "navbar-inner" -->
+					<form class="searchbar searchbar-expandable">
+						<div class="searchbar-inner">
+							<div class="searchbar-input-wrap">
+								<input type="search" placeholder="Search"/>
+								<i class="searchbar-icon"></i>
+								<span class="input-clear-button"></span>
+							</div>
+							<span class="searchbar-disable-button">Cancel</span>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="view view-main theme-dark">
+				<!-- Initial Page, "data-name" contains page name -->
+				<div class="page" data-name="home">
+					<div class="page-content" style="padding-top: 10px;">
+						<div class="card">
+							<div class="card-header">Report Incidents</div>
+							<div class="card-content card-content-padding">
+								<div class="block">
+									<div class="row">
+										<a href="/report/" class="col button button-raised button-fill color-red" >Report Incident</a>
+										<button class="col button button-raised button-fill color-green">Help</button>
+									</div>
+									<div class="row">&nbsp;</div>
+									<div class="row">
+										<a href="/reporthistory/" class="col button button-raised button-fill color-green">Report Incident History</a>
+									</div>
+									<div class="row">&nbsp;</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header">Provincial Alerts</div>
+							<div class="card-content card-content-padding swiper-container">
+							    <!-- Slides wrapper -->
+							    <div class="swiper-wrapper">
+							        <!-- Slides -->
+							        <div class="swiper-slide">
+							        	<h3>Dengue Pandamic</h3>
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</p>
+							        </div>
+							        <div class="swiper-slide">
+							        	<h3>Dengue Pandamic</h3>
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</p>
+							        </div>
+							        <div class="swiper-slide">
+							        	<h3>Dengue Pandamic</h3>
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</p>
+							        </div>
+							    </div>
+							    <!-- Pagination, if required -->
+							    <div class="swiper-pagination"></div>
+							</div>
+							<div class="card-footer">Top Alerts are decided by MOH</div>
+						</div>
+						<div class="card">
+							<div class="card-header">National Alerts</div>
+							<div class="card-content card-content-padding swiper-container">
+								    <!-- Slides wrapper -->
+							    <div class="swiper-wrapper">
+							        <!-- Slides -->
+							        <div class="swiper-slide">
+							        	<h3>Dengue Pandamic</h3>
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</p>
+							        </div>
+							        <div class="swiper-slide">
+							        	<h3>Dengue Pandamic</h3>
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</p>
+							        </div>
+							        <div class="swiper-slide">
+							        	<h3>Dengue Pandamic</h3>
+							        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</p>
+							        </div>
+							    </div>
+							    <!-- Pagination, if required -->
+							    <div class="swiper-pagination"></div>
+							</div>
+							<div class="card-footer">Top Alerts are decided by MOH or Provincial Health Officies</div>
+						</div>
+
+						<div class="card">
+							<div class="card-footer">By RACACBT</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="dist/js/framework7.min.js" type="text/javascript">
+		</script> <!-- Path to your app js-->
+		 
+		<script src="dist/js/my-app.js" type="text/javascript">
+		</script>
+	</body>
+</html>

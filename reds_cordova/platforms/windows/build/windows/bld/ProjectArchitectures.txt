@@ -1,0 +1,1 @@
+C:\wamp\www\fw7electron\reds\platforms\windows\CordovaApp.Windows.jsproj;neutral
