@@ -1,4 +1,3 @@
-# reds
 # REDS
 Real Time Epidemic Data Relay Service by RAC ACBT
 
