@@ -1,5 +1,5 @@
 # REDS
-Real Time Epidemic Data Relay Service by RAC ACBT
+Real Time Epidemic Data Relay Service by RAC ACBT [![Build Status](https://travis-ci.org/voxsar/reds.svg?branch=master)](https://travis-ci.org/voxsar/reds)
 
 It's goal is to provide the Sri Lanka Ministry of Health a two communication tool to help diseminate infomation to rural areas, doctors and clinic about oncoming epidemics
 
